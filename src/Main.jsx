@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './main.css';
-import NoImage from './no-img-landscape-text.png';
-import axios from 'axios';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {getShow} from './actions/showActions';
+import { getShow } from './actions/showActions';
 
 class Main extends Component {
     constructor(props) {
