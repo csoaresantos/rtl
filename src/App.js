@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './main.css';
-import Main from './Main';
+import HeaderShow from './HeaderShow';
 import EpisodeList from './EpisodeList';
 
 export default class App extends Component {
@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {    
     return (
       <main role="main">
-        <Main />
+        <HeaderShow />
         <EpisodeList />
       </main>
     );

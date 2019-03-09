@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getShow } from './actions/showActions';
 
-class Main extends Component {
+class HeaderShow extends Component {
     constructor(props) {
         super(props);
     }
@@ -35,4 +35,4 @@ class Main extends Component {
 
 const mapStateToProps = state => ({ show: state.show.info })
 const mapDispatchToProps = dispatch => bindActionCreators({getShow}, dispatch);
-export default connect(mapStateToProps, mapDispatchToProps)(Main);
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderShow);
