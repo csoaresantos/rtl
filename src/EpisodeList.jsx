@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './main.css';
-import NoImage from './no-img-landscape-text.png';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {getEpisodes} from './actions/episodesActions';
+import ListItemHTML from './ListItemHTML';
 
 class EpisodeList extends Component {
 
@@ -18,8 +17,9 @@ class EpisodeList extends Component {
 
   render() {
     const episodes = this.props.list ? this.props.list : [];
-    
+
     return (
+      
         <div class="album py-5 bg-light">
           <div class="container">
           <h2>Episodes</h2>
@@ -33,21 +33,13 @@ class EpisodeList extends Component {
 
                   const link = `/EpisodeDetail/${data.id}`;
                   return (
-                    <div class="col-md-4" key={data.id}>
-                      <div class="card mb-4 shadow-sm">
-                        <img src={data.image != undefined ? data.image.medium : NoImage} />
-                        <div class="card-body">
-                          <strong class="d-inline-block mb-2 text-primary">{data.name}</strong>
-                          <p class="card-text">{episodeSummary}</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                              <Link to={link}>View Episode</Link>
-                            </div>
-                            <small class="text-muted">{data.runtime}</small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <ListItemHTML 
+                      id={data.id} 
+                      image={data.image} 
+                      name={data.name} 
+                      summary={episodeSummary} 
+                      runtime={data.runtime} 
+                      link={link} />
                   )
                 }
               )
