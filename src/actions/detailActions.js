@@ -1,9 +1,9 @@
-import axios from 'axios';
-
-const API_EPISODES_URL = 'http://api.tvmaze.com/shows/6771/episodes';
+import ShowService from '../ShowService';
 
 export function getEpisode(id) {
-    const request = axios.get(`http://api.tvmaze.com/episodes/${id}`);
+
+    const service = new ShowService({apiUrl: `http://api.tvmaze.com/episodes/${id}`});
+    const request = service.request();
 
     return {
         type: 'EPISODE_DETAIL_FETCHED',

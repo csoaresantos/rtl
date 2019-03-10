@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
+    "chai": "^4.2.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
     "react": "^16.8.4",
@@ -14,7 +15,9 @@
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
     "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sinon": "^7.2.7",
+    "sinon-chai": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
