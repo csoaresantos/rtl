@@ -1,7 +1,7 @@
 import chai, { expect } from 'chai';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
-import ShowService from './ShowService';
+import ShowService from '../ShowService';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 

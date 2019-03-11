@@ -1,5 +1,5 @@
 import React from 'react';
-import NoImage from './no-img-landscape-text.png';
+import NoImage from '../no-img-landscape-text.png';
 import { Link } from 'react-router-dom';
 
 export default ({id, image, name, summary, runtime, link}) => (

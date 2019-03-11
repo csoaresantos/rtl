@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import EpisodeDetail from './EpisodeDetail';
+import App from './components/App';
+import EpisodeDetail from './components/EpisodeDetail';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { applyMiddleware, createStore } from 'redux';

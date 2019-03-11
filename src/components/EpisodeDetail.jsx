@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {getEpisode} from './actions/detailActions';
+import {getEpisode} from '../actions/detailActions';
 import DetailHTML from './DetailHTML';
 
 class EpisodeDetail extends Component {

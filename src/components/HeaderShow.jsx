@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './main.css';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { getShow } from './actions/showActions';
+import { getShow } from '../actions/showActions';
 
 class HeaderShow extends Component {
     constructor(props) {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './main.css';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {getEpisodes} from './actions/episodesActions';
+import {getEpisodes} from '../actions/episodesActions';
 import ListItemHTML from './ListItemHTML';
 
 class EpisodeList extends Component {
